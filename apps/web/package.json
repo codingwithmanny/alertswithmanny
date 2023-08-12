@@ -1,0 +1,39 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "with-env": "dotenv -e ../../.env --",
+    "dev": "pnpm with-env next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "pnpm with-env npx prisma generate",
+    "db:migrate": "pnpm with-env npx prisma migrate dev",
+    "db:studio": "pnpm with-env npx prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.1.1",
+    "@tanstack/react-query": "^4.32.6",
+    "@types/node": "20.4.10",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "@upstash/qstash": "^0.3.6",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.13",
+    "ethers": "^6.7.0",
+    "next": "13.4.13",
+    "nodemailer": "^6.9.4",
+    "postcss": "8.4.27",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.9",
+    "dotenv-cli": "^7.2.1",
+    "prisma": "^5.1.1"
+  }
+}

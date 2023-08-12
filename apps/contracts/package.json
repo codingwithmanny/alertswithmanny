@@ -1,0 +1,17 @@
+{
+  "name": "contracts",
+  "scripts": {
+    "dev": "hardhat node",
+    "deploy": "hardhat run --network localhost scripts/deploy.ts",
+    "compile": "hardhat compile"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.1"
+  },
+  "dependencies": {
+    "@api3/airnode-protocol-v1": "^2.8.0",
+    "@api3/contracts": "^0.10.0",
+    "@openzeppelin/contracts": "^4.9.3"
+  }
+}
